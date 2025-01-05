@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        
+        <!-- Hibernate Dialect for PostgreSQL -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        
+        <!-- DB Connection Properties for PostgreSQL -->
+        <property name="hibernate.connection.driver_class"> com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/CompanyInfo</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">123456789</property>
+        
+        <!-- Hibernate Properties -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.cache.use_second_level_cache">false</property>
+        <property name="hibernate.hbm2ddl.auto">create</property>
+        
+        <!-- Mapping Resource -->
+        <mapping resource="emp.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>
+
+
+<!--
+MYSQL 8.0.26 Connection Details :
+Dialect : org.hibernate.dialect.MySQLDialect
+Driver Name: com.mysql.cj.jdbc.Driver
+URL: jdbc:mysql://localhost:3306/databasename
+user pass :root and 123456789-->
+<!--  -->
+<!-- Oracle 11G/12C Connection Details :
+Dialect : org.hibernate.dialect.Oracle10gDialect
+Driver Name: oracle.jdbc.driver.OracleDriver
+URL: jdbc:oracle:thin:@localhost:1521:XE 
+user pass:hr and hr-->
+<!--  -->
+<!-- PostgreSQL Connection Details :
+Dialect : org.hibernate.dialect.PostgreSQLDialect
+Driver Name: org.postgresql.Driver
+URL: jdbc:postgresql://localhost:5432/dbname
+user pass:postgres and 123456789 -->
+<!--  -->
+<!--  -->
+<!--  -->
