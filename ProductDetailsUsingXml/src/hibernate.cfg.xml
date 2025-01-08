@@ -12,7 +12,7 @@
         <property name="hibernate.connection.password">hr</property>
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.cache">false</property>
-        <property name="hibernate.hbm2ddl.auto">create</property>
-        <mapping class="com.controller.Employee"/>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <mapping class="com.model.Product"/>
     </session-factory>
 </hibernate-configuration>
