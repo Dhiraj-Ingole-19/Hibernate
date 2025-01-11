@@ -1,4 +1,4 @@
-package com.controller;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -27,7 +27,7 @@ public class Insert_MainApp  {
 			
 			t.commit();
 			s.close();
-			sf.close();
+			
 
 	
 		

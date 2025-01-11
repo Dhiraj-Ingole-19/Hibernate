@@ -22,8 +22,6 @@ public class Delete_MainApp {
 
         System.out.print("Enter product code: ");
         int pcode = sc.nextInt();
-
-
         try {
           
             String hql = "from Product where code = :pcode";
@@ -52,7 +50,7 @@ public class Delete_MainApp {
         } finally {
             // Close resources
             s.close();
-            sf.close();
+           
             sc.close();
         }
     }
